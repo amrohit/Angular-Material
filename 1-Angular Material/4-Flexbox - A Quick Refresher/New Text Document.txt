@@ -1,0 +1,5 @@
+https://github.com/angular/flex-layout/wiki/API-Documentation
+
+
+https://github.com/angular/flex-layout/wiki/Using-Angular-CLI
+npm install @angular/flex-layout @angular/cdk --save

@@ -1,0 +1,9 @@
+Why Do We Have To Import Everything Separately?
+Section 3, Lecture 25
+When adding a new Angular Material component, you have to add the appropriate module import (e.g. for the MatButton  you add the MatButtonModule  to imports[]  in your AppModule  or MaterialModule ).
+
+Why is that required?
+
+Because this ensures that your code bundle stays as small as possible and no unnecessary overhead code is added. If you would import the complete Angular Material package, you'd import all components it offers even though you might only be interested in two of them.
+
+Therefore, you should always import the appropriate module which contains the name of the component you're using.
