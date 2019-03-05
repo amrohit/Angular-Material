@@ -1,0 +1,15 @@
+mat-sidenav-container,
+mat-sidenav-content,
+mat-sidenav {
+  height: 100%;
+
+}
+
+mat-toolbar {
+  font-size: 16px !important;
+}
+
+mat-sidenav {
+  width: 250px;
+}
+
