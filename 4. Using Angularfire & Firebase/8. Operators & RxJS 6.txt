@@ -1,0 +1,21 @@
+Operators & RxJS 6
+Section 6, Lecture 85
+In case you're using RxJS 6 or higher (check the package.json ) AND you're NOT using rxjs-compat  (which you can install via npm install --save rxjs-compat  - no changes to the code would then be required), the following adjustment needs to be made when working with RxJS operators.
+
+Instead of
+
+....snapshotChanges()
+    .map(docArray => { ... })
+you should use the pipe()  method provided by RxJS:
+
+....snapshotChanges()
+    .pipe(map(docArray => { ... }))
+It simply wrap the RxJS operator you want to use - in this case map() . You can actually use multiple pipe()  calls on the same observable - simply chain them after each other.
+
+For this to work, you'll need to import the map()  method though:
+
+import { map } from 'rxjs/operators'; 
+
+After adding this at the top of your file, you should be good to go.
+
+
